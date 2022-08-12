@@ -6,6 +6,7 @@
     - use of FontAwesome icon in pseudo element
     - `::marker` pseudo element
     - flexbox
+    - `text-stoke`
 
 ## Time taken to complete this project
     - 5 hours
