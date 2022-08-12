@@ -109,6 +109,10 @@ nav {
   width: 100%;
 }
 
+.bottom-img{
+  float: right;
+}
+
 .bottom-img-container{
   width: 350px;
   height: 300px;
