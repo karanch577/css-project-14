@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f5f2f0;
+  overflow: hidden;
+}
+
+/* navigation bar */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 3.5em;
+}
+
+.logo {
+  height: 40px;
+}
+
+.list {
+  display: flex;
+  list-style-type: none;
+}
+
+.list-items {
+  margin-left: 4.5em;
+}
+
+.line {
+  height: 2px;
+  width: 60%;
+  background-color: #333333;
+  position: relative;
+  right: 15.6em;
+  top: 0.7em;
+}
+
+/* HERO-SECTION */
+
+.hero-img {
+  width: 500px;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.hero-right {
+  float: right;
+}
+
+.right-top {
+  display: flex;
+  margin-right: 4em;
+}
+
+.main-heading {
+  font-size: 7rem;
+  color: transparent;
+  border: #b0aeac;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.main-heading-dark {
+  color: #333333;
+}
+
+.sub-heading {
+  align-self: flex-end;
+  color: #a5a5a4;
+  margin: 0.8em;
+  font-size: 1.7rem;
+  margin-right: 6em;
+  font-weight: 300;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.icon {
+  width: 25px;
+}
+
+.right-mid {
+  background-color: #333333;
+  color: #eeebe9;
+  font-size: 1.5rem;
+  padding: .6em 2.05em;
+  margin-top: .6em;
+  float: right;
+  margin-right: 2.7em;
+  font-weight: 700;
+}
+
+.right-bottom{
+  display: flex;
+  margin-top: 4em;
+  width: 100%;
+}
+
+.bottom-img-container{
+  width: 350px;
+  height: 300px;
+  float: right;
+  background: url('images/pexels-cottonbro-7974875.jpg') -50px -43px;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+
+.bottom-list{
+  float: right;
+}
+.bottom-list-items{
+  margin: 1em 0;
+  font-size: 1.1rem;
+  margin-right: 6em;
+  padding-left: 1em;
+}
+
+.bottom-list-items::marker{
+  display: block;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f111";
+  color: #828282;
+  width: 3px;
+  font-size: .5rem;
+}
+
+.bottom-list-items:first-child::marker{
+ 
+  list-style-type: none;
+  content: "\f111";
+  color: #fff;
+
+}
+
+.bottom-list-items::before{
+  content: "";
+  display: block;
+  background-color:#828282;
+  width: 2px;
+  height: 60px;
+  position: absolute;
+  right: 776px;
+
+}
+
+
+.bottom-list-items:first-child::before{
+  content: "";
+  display: block;
+  background-color:#333333;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: relative;
+  left: -26px;
+  top: 16px;
+}
+.bottom-list-items:first-child::after{
+  content: "";
+  display: block;
+  background-color:#828282;
+  width: 2px;
+  height: 35px;
+  position: absolute;
+  left: 588px;
+  bottom: 152px;
+}
+
+.ri-double-quotes-r{
+  color: #333;
+  font-size: 2.5rem;
+}
+
+.description{
+  margin: .7em 0;
+  width: 18em;
+}
+
+.ri-arrow-down-line{
+  float: right;
+  color: 7C7B7A;
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: 1.5em;
+  right: 2em;
+}
+
+.bottom-arrow-line{
+  width: 2px;
+  height: 50px;
+  background-color: #333333;
+  position: absolute;
+  bottom: 3.5em;
+  right: 3.69em;
+}
