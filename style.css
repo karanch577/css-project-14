@@ -8,7 +8,7 @@
 
 body {
   background-color: #f5f2f0;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 /* navigation bar */
@@ -25,6 +25,11 @@ nav {
   height: 40px;
 }
 
+.list a {
+  text-decoration: none;
+  color: #333;
+}
+
 .list {
   display: flex;
   list-style-type: none;
@@ -36,7 +41,7 @@ nav {
 
 .line {
   height: 2px;
-  width: 60%;
+  width: 40%;
   background-color: #333333;
   position: relative;
   right: 15.6em;
@@ -46,7 +51,7 @@ nav {
 /* HERO-SECTION */
 
 .hero-img {
-  width: 500px;
+  width: 37%;
   position: absolute;
   top: 0;
   z-index: -1;
@@ -54,6 +59,8 @@ nav {
 
 .hero-right {
   float: right;
+  width: 60%;
+  /* background-color: green; */
 }
 
 .right-top {
@@ -107,6 +114,7 @@ nav {
   display: flex;
   margin-top: 4em;
   width: 100%;
+  position: relative;
 }
 
 .bottom-img{
@@ -156,10 +164,10 @@ nav {
   display: block;
   background-color:#828282;
   width: 2px;
-  height: 60px;
+  height: 200px;
   position: absolute;
-  right: 776px;
-
+  right: 100.3%;
+  bottom: 43%;
 }
 
 
@@ -174,15 +182,17 @@ nav {
   left: -26px;
   top: 16px;
 }
-.bottom-list-items:first-child::after{
+.bottom-list-items:first-child::afterr{
   content: "";
-  display: block;
+  /* display: block; */
   background-color:#828282;
   width: 2px;
   height: 35px;
-  position: absolute;
-  left: 588px;
-  bottom: 152px;
+  /* position: absolute; */
+  left: -0.6%;
+  top: 10.4%;
+  /* bottom: 152px; */
+  /* border: 1px solid red; */
 }
 
 .ri-double-quotes-r{
@@ -201,14 +211,31 @@ nav {
   font-size: 1.5rem;
   position: absolute;
   bottom: 1.5em;
-  right: 2em;
+  right: 2.5em;
 }
 
 .bottom-arrow-line{
+
   width: 2px;
   height: 50px;
   background-color: #333333;
   position: absolute;
   bottom: 3.5em;
-  right: 3.69em;
+  right: 4.45em;
+}
+
+@media (max-width:1124px) {
+  .hero-right{
+    width: 100%;
+    padding-left: 5%;
+  }
+
+  .hero-img{
+    opacity: 0.2;
+    width: 60%;
+  }
+
+  .line{
+    display: none;
+  }
 }
