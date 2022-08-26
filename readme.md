@@ -9,7 +9,7 @@
     - `text-stoke`
 
 ## Time taken to complete this project
-    - 5 hours
+    - 5 hours + 1 hour (responsiveness)
 
 ## Screenshot
 ![image](project14.png)
