@@ -271,4 +271,8 @@ nav {
   .bottom-img-container{
     width: 60vw;
   }
+
+  .bottom-list-items::before{
+    left: -1%;
+  }
 }
