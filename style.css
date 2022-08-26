@@ -8,7 +8,6 @@
 
 body {
   background-color: #f5f2f0;
-  /* overflow: hidden; */
 }
 
 /* navigation bar */
@@ -60,12 +59,12 @@ nav {
 .hero-right {
   float: right;
   width: 60%;
-  /* background-color: green; */
 }
 
 .right-top {
   display: flex;
-  margin-right: 4em;
+  margin-right: 4%;
+  justify-content: space-between;
 }
 
 .main-heading {
@@ -85,7 +84,6 @@ nav {
   color: #a5a5a4;
   margin: 0.8em;
   font-size: 1.7rem;
-  margin-right: 6em;
   font-weight: 300;
 }
 
@@ -113,7 +111,7 @@ nav {
 .right-bottom{
   display: flex;
   margin-top: 4em;
-  width: 100%;
+  width: 95%;
   position: relative;
 }
 
@@ -122,7 +120,7 @@ nav {
 }
 
 .bottom-img-container{
-  width: 350px;
+  width: 35vw;
   height: 300px;
   float: right;
   background: url('images/pexels-cottonbro-7974875.jpg') -50px -43px;
@@ -137,7 +135,7 @@ nav {
 .bottom-list-items{
   margin: 1em 0;
   font-size: 1.1rem;
-  margin-right: 6em;
+  margin-right: 6vw;
   padding-left: 1em;
 }
 
@@ -182,18 +180,7 @@ nav {
   left: -26px;
   top: 16px;
 }
-.bottom-list-items:first-child::afterr{
-  content: "";
-  /* display: block; */
-  background-color:#828282;
-  width: 2px;
-  height: 35px;
-  /* position: absolute; */
-  left: -0.6%;
-  top: 10.4%;
-  /* bottom: 152px; */
-  /* border: 1px solid red; */
-}
+
 
 .ri-double-quotes-r{
   color: #333;
@@ -224,7 +211,7 @@ nav {
   right: 4.45em;
 }
 
-@media (max-width:1124px) {
+@media (max-width:1124px){
   .hero-right{
     width: 100%;
     padding-left: 5%;
@@ -237,5 +224,51 @@ nav {
 
   .line{
     display: none;
+  }
+}
+
+/* navbar and font size fix */
+
+@media (max-width:770px){
+  .list{
+    display: none;
+  }
+
+  nav::after {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    display: block;
+    content: "\f0c9";
+    position: absolute;
+    right: 2em;
+    top: 2.5em;
+  }
+
+  .main-heading{
+    font-size: 2.8rem;
+  }
+
+  .sub-heading{
+    font-size: 1rem;
+  }
+
+  .right-mid{
+    font-size: 1rem;
+  }
+
+  .bottom-list-items{
+    font-size: .9rem;
+  }
+
+  .description{
+    font-size: .8rem;
+  }
+
+  .icon{
+    margin-top: 1em;
+  }
+
+  .bottom-img-container{
+    width: 60vw;
   }
 }
